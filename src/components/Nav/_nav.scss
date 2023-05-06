@@ -1,0 +1,59 @@
+nav {
+  position: fixed;
+  top: 0rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-left {
+    h1 {
+      font-size: 20px;
+      color: #fff;
+
+      @include Pads() {
+        font-size: 26px;
+      }
+
+      @include Laptops() {
+        font-size: 26px;
+      }
+
+      span {
+        // color: #000;
+        // margin-left: 1rem;
+        font-size: 12px;
+        font-weight: 300;
+
+        @include Pads() {
+          font-size: 14px;
+        }
+
+        @include Laptops() {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      // margin-right: 0.5rem;
+      font-size: 18px;
+
+      display: none;
+    }
+  }
+}

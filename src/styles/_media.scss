@@ -1,0 +1,11 @@
+@mixin Pads {
+  @media (min-width: 735px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin Laptops {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}

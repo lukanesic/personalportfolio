@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  transition: background-color 1s ease;
+}
+
+.wrapper {
+  padding: 1rem 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 735px) and (max-width: 1279px) {
+  .wrapper {
+    padding: 1rem 4rem;
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper {
+    width: 1200px;
+  }
+}
+
+.main-head {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 40px;
+  color: #1c1d1f;
+  padding: 2rem 0;
+}
+
+.main-moto {
+  width: 100%;
+  color: #1c1d1f;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.h2 {
+  font-size: 28px;
+  color: #1c1d1f;
+  letter-spacing: -1px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: 16px;
+  color: rgba(28, 29, 31, 0.8);
+  font-weight: 200;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.white-text {
+  color: #fff !important;
+}
+
+nav {
+  position: fixed;
+  top: 0rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-left h1 {
+  font-size: 20px;
+  color: #fff;
+}
+@media (min-width: 735px) and (max-width: 1279px) {
+  nav .nav-left h1 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1280px) {
+  nav .nav-left h1 {
+    font-size: 26px;
+  }
+}
+nav .nav-left h1 span {
+  font-size: 12px;
+  font-weight: 300;
+}
+@media (min-width: 735px) and (max-width: 1279px) {
+  nav .nav-left h1 span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) {
+  nav .nav-left h1 span {
+    font-size: 14px;
+  }
+}
+nav .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-right span {
+  font-size: 18px;
+  display: none;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+}
+footer h1 {
+  font-size: 36px;
+  padding: 2rem 0;
+  cursor: pointer;
+  margin: 0 auto;
+  letter-spacing: -2px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+@media (min-width: 1280px) {
+  footer h1 {
+    font-size: 50px;
+  }
+}
+footer p {
+  font-size: 16px;
+  padding: 2rem 0;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+}
+@media (min-width: 735px) and (max-width: 1279px) {
+  footer p {
+    width: 500px;
+  }
+}
+@media (min-width: 1280px) {
+  footer p {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+footer .socials span {
+  margin-right: 1.5rem;
+}
+footer .linear-anim {
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(90deg, #fff, rgb(248, 163, 83), rgb(95, 173, 242), #fff, rgb(236, 102, 93));
+  background-size: 400% 400%;
+  animation: animeGradients 10s infinite linear;
+}
+@keyframes animeGradients {
+  0% {
+    background-position: 0 85%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0 85%;
+  }
+}
+footer .credits span {
+  font-weight: 400;
+}
+footer .credits h4 {
+  font-size: 12px;
+  font-weight: 200;
+}
+@media (min-width: 1280px) {
+  footer .credits h4 {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=global.css.map */
