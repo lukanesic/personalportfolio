@@ -1,0 +1,58 @@
+.heading-section {
+  // desktop
+  // padding: 20rem 0 10rem;
+
+  // ovde je isto za gore i dole zato sto je oduzeta 100vh od projekta
+  padding: 5rem 0 5rem;
+  color: #1c1d1f;
+
+  h2 {
+    font-size: 30px;
+    color: #1c1d1f;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    @include Pads() {
+      font-size: 35px;
+    }
+
+    @include Laptops() {
+      font-size: 38px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: rgba(29, 30, 32, 0.7);
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: -0.2px;
+    // desktop
+    // width: 600px;
+    width: 100%;
+    margin: 1.5rem 0;
+
+    @include Pads() {
+      width: 80%;
+      max-width: 400px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    @include Laptops() {
+      width: 600px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .webflow-text {
+    background: -webkit-linear-gradient(45deg, #ebebeb, #4a6ada, #4a6ada);
+
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

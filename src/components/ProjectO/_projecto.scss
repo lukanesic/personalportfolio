@@ -1,0 +1,76 @@
+.projecto {
+  margin-top: 8rem;
+  color: #1c1d1f;
+
+  @include Pads() {
+    display: flex;
+  }
+
+  @include Laptops() {
+    display: flex;
+    margin-top: 16rem;
+
+    margin-bottom: 14rem;
+  }
+
+  .projecto-desc {
+    @include Pads() {
+      width: 50%;
+    }
+
+    @include Laptops() {
+      width: 50%;
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem;
+
+    @include Pads() {
+      width: 50%;
+      font-size: 26px;
+      letter-spacing: -0.7px;
+    }
+
+    @include Laptops() {
+      width: 50%;
+      font-size: 38px;
+      letter-spacing: -1px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(28, 29, 31, 0.8);
+
+    @include Pads() {
+      font-size: 16px;
+    }
+
+    @include Laptops() {
+      font-size: 18px;
+    }
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+    display: inline-block;
+    font-size: 14px;
+    color: #1c1d1f;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.4s ease;
+
+    @include Laptops() {
+      font-size: 16px;
+    }
+  }
+
+  .btn:hover {
+    color: #000;
+  }
+}

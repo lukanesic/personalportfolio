@@ -1,0 +1,51 @@
+.landing {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  width: 100%;
+
+  @include Pads() {
+  }
+
+  .main-head {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 40px;
+    color: #1c1d1f;
+    padding: 2rem 0;
+
+    @include Pads() {
+      font-size: 52px;
+      line-height: 60px;
+      width: 700px;
+    }
+
+    @include Laptops() {
+      font-size: 80px;
+      line-height: 60px;
+      width: 900px;
+      letter-spacing: -5px;
+      line-height: 90px;
+    }
+  }
+
+  .main-moto {
+    width: 100%;
+    color: #1c1d1f;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+
+    @include Pads() {
+      font-size: 18px;
+    }
+
+    @include Laptops() {
+      font-size: 18px;
+    }
+  }
+}

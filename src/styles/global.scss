@@ -10,6 +10,8 @@
 
 body {
   transition: background-color 1s ease;
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
@@ -69,3 +71,13 @@ body {
 
 @import './../components/Nav/nav';
 @import './../components/Footer/footer';
+
+@import './../components/Landing/landing';
+@import './../components/HeadingSection/headingsection';
+@import './../components/Project/project';
+@import './../components/Process/process';
+
+@import './../components/ProjectL/projectl';
+@import './../components/ProjectB/projectb';
+@import './../components/ProjectO/projecto';
+@import './../components/ProjectI/projecti';

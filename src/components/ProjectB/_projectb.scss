@@ -1,0 +1,13 @@
+.projectb {
+  height: 400px;
+  position: relative;
+  width: 100%;
+
+  @include Pads() {
+    height: 600px;
+  }
+
+  @include Laptops() {
+    height: 600px;
+  }
+}

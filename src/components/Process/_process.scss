@@ -1,0 +1,42 @@
+.process {
+  color: #fff;
+
+  @include Pads() {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-gap: 5rem;
+    justify-content: space-between;
+    margin: 5rem auto;
+  }
+
+  @include Laptops() {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-gap: 5rem;
+    justify-content: space-between;
+    margin: 5rem auto;
+  }
+
+  .process-container {
+    margin: 4rem 0;
+
+    span {
+      font-size: 120px;
+      font-weight: 200;
+      letter-spacing: -7px;
+    }
+
+    h4 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 200;
+      margin-top: 1rem;
+      letter-spacing: -0.2px;
+    }
+  }
+}

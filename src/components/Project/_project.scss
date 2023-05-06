@@ -1,0 +1,117 @@
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // desktop
+  // height: 100vh;
+  flex-direction: column;
+  margin: 5rem 0;
+
+  @include Pads() {
+    flex-direction: row;
+    height: 100vh;
+    margin: 0rem auto;
+  }
+
+  @include Laptops() {
+    flex-direction: row;
+    height: 100vh;
+    margin: 0rem auto;
+  }
+
+  .img {
+    position: relative;
+    // desktop
+    // width: 600px;
+    // height: 600px;
+
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2rem;
+
+    @include Pads() {
+      margin-bottom: unset;
+      width: 48%;
+      height: 400px;
+    }
+
+    @include Laptops() {
+      margin-bottom: unset;
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+  .info {
+    // desktop
+    // width: 500px;
+
+    width: 100%;
+
+    @include Pads() {
+      width: 48%;
+    }
+
+    @include Laptops() {
+      width: 500px;
+    }
+
+    h4 {
+      color: rgba(28, 29, 31, 0.897);
+      // font-size:20px;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.8px;
+
+      @include Laptops() {
+        font-size: 18px;
+      }
+    }
+
+    h2 {
+      // font-size: 50px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #1c1d1f;
+      margin: 1rem 0;
+      letter-spacing: -1px;
+
+      @include Pads() {
+        font-size: 28px;
+        letter-spacing: -1.5px;
+      }
+
+      @include Laptops() {
+        font-size: 34px;
+        letter-spacing: -1.5px;
+      }
+    }
+
+    h6 {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.2px;
+      color: #1c1d1f;
+
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+}
+
+.project-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  flex-direction: column;
+
+  @include Pads() {
+    flex-direction: row-reverse;
+  }
+
+  @include Laptops() {
+    flex-direction: row-reverse;
+  }
+}
