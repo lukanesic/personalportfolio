@@ -5,12 +5,14 @@ import Homepage from './pages/Homepage'
 import Ulnaris from './pages/Ulnaris'
 import Audi from './pages/Audi'
 import Jugometal from './pages/Jugometal'
+import ScrollToTop from './hooks/scrollToTop'
 
 function App() {
   return (
     // Nek ostane ovo ovako, ali vraticu react router na v5 kako bi mogoa da iskoristim taj switch i sve to sto treba.
     <BrowserRouter>
       <AnimatePresence mode='wait'>
+        <ScrollToTop />
         <Routes key='homepage'>
           <Route path='/' element={<Homepage />} />
         </Routes>
