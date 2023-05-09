@@ -310,7 +310,6 @@ footer .credits h4 {
   justify-content: center;
   height: 100vh;
   flex-direction: column;
-  margin: 5rem 0;
 }
 @media (min-width: 735px) and (max-width: 1279px) {
   .project {
@@ -403,18 +402,20 @@ footer .credits h4 {
 .project-reverse {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row-reverse;
   flex-direction: column;
 }
 @media (min-width: 735px) and (max-width: 1279px) {
   .project-reverse {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1280px) {
   .project-reverse {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 

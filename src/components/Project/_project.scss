@@ -5,7 +5,7 @@
 
   height: 100vh;
   flex-direction: column;
-  margin: 5rem 0;
+  // margin: 5rem 0;
 
   @include Pads() {
     flex-direction: row;
@@ -104,16 +104,18 @@
 .project-reverse {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row-reverse;
 
   flex-direction: column;
 
   @include Pads() {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   @include Laptops() {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
