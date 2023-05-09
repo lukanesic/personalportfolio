@@ -252,6 +252,7 @@ footer .credits h4 {
 .heading-section {
   padding: 5rem 0 5rem;
   color: #1c1d1f;
+  border: 1px solid red;
 }
 .heading-section h2 {
   font-size: 30px;
@@ -309,13 +310,14 @@ footer .credits h4 {
   justify-content: center;
   height: 100vh;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 5rem 0;
 }
 @media (min-width: 735px) and (max-width: 1279px) {
   .project {
     flex-direction: row;
     height: 100vh;
     margin: 0rem auto;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1280px) {
@@ -323,6 +325,7 @@ footer .credits h4 {
     flex-direction: row;
     height: 100vh;
     margin: 0rem auto;
+    justify-content: space-between;
   }
 }
 .project .img {
@@ -400,7 +403,7 @@ footer .credits h4 {
 .project-reverse {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row-reverse;
   flex-direction: column;
 }
@@ -417,6 +420,7 @@ footer .credits h4 {
 
 .process {
   color: #fff;
+  border: 1px solid red;
 }
 @media (min-width: 735px) and (max-width: 1279px) {
   .process {

@@ -1,6 +1,8 @@
 .process {
   color: #fff;
 
+  border: 1px solid red;
+
   @include Pads() {
     display: grid;
     grid-template-columns: repeat(2, 45%);

@@ -2,21 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   height: 100vh;
   flex-direction: column;
-  // margin: 5rem 0;
-  margin: 0 auto;
+  margin: 5rem 0;
 
   @include Pads() {
     flex-direction: row;
     height: 100vh;
     margin: 0rem auto;
+    justify-content: space-between;
   }
 
   @include Laptops() {
     flex-direction: row;
     height: 100vh;
     margin: 0rem auto;
+    justify-content: space-between;
   }
 
   .img {
@@ -102,7 +104,7 @@
 .project-reverse {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row-reverse;
 
   flex-direction: column;
