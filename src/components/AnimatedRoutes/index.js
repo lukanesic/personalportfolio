@@ -14,7 +14,11 @@ const AnimatedRoutes = () => {
     <AnimatePresence
       mode='wait'
       initial={false}
-      onExitComplete={() => window.scrollTo(0, 0)}
+      onExitComplete={() => {
+        if (typeof window !== 'undefined') {
+          window.scrollTo({ top: 0 })
+        }
+      }}
     >
       <Routes location={location} key={location.pathname}>
         <Route path='/' element={<Homepage />} />
