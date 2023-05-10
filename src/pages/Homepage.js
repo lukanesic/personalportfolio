@@ -6,6 +6,9 @@ import Main from '../layout/Main'
 
 import Process from '../components/Process'
 
+import { motion } from 'framer-motion'
+import ScrollToTop from '../hooks/scrollToTop'
+
 const data = [
   {
     company: 'Tehnoplast',
@@ -96,50 +99,57 @@ const webflow = [
 
 const Homepage = () => {
   return (
-    <Main>
-      <Landing />
-      <HeadingSection
-        title={'work.'}
-        paragraph={
-          'Each client is unique and so is each project. Here is quick glimpse of my portfolio.'
-        }
-      />
-
-      {data.map((project, index) => (
-        <Project
-          key={index}
-          company={project.company}
-          src={project.src}
-          tech={project.tech}
-          title={project.title}
-          reverse={project.reverse && project.reverse}
-          theme={project.theme}
-          color={project.text}
-          txtClass={project.txtClass && project.txtClass}
-          url={project.url}
+    <>
+      {/* <ScrollToTop /> */}
+      <Main>
+        <Landing />
+        <HeadingSection
+          title={'work.'}
+          paragraph={
+            'Each client is unique and so is each project. Here is quick glimpse of my portfolio.'
+          }
         />
-      ))}
 
-      <HeadingSection
-        title={'process.'}
-        paragraph={
-          'The frontend development process involves design, coding, testing, and optimization.'
-        }
-        light
-      />
+        {data.map((project, index) => (
+          <Project
+            key={index}
+            company={project.company}
+            src={project.src}
+            tech={project.tech}
+            title={project.title}
+            reverse={project.reverse && project.reverse}
+            theme={project.theme}
+            color={project.text}
+            txtClass={project.txtClass && project.txtClass}
+            url={project.url}
+          />
+        ))}
 
-      <Process data={process} />
+        <div className='space'>
+          <HeadingSection
+            title={'process.'}
+            paragraph={
+              'The frontend development process involves design, coding, testing, and optimization.'
+            }
+            light
+          />
 
-      <HeadingSection
-        paragraph={
-          'Webflow offers a unique blend of no-coding, customization, SEO-friendliness, and e-commerce capabilities.'
-        }
-        light
-        webflow={'or choose webflow.'}
-      />
+          <Process data={process} />
+        </div>
 
-      <Process data={webflow} />
-    </Main>
+        <div className='space'>
+          <HeadingSection
+            paragraph={
+              'Webflow offers a unique blend of no-coding, customization, SEO-friendliness, and e-commerce capabilities.'
+            }
+            light
+            webflow={'or choose webflow.'}
+          />
+
+          <Process data={webflow} />
+        </div>
+      </Main>
+    </>
   )
 }
 

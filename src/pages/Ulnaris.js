@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Main from '../layout/Main'
 
 import ProjectL from '../components/ProjectL'
 import ProjectB from '../components/ProjectB'
 import ProjectO from '../components/ProjectO'
 import ProjectI from '../components/ProjectI'
+import ScrollToTop from '../hooks/scrollToTop'
 
 const landing = {
   client: 'Ulnaris Physiotherapy',
@@ -15,8 +16,12 @@ const landing = {
 }
 
 const Ulnaris = () => {
+  useEffect(() => {
+    document.body.style.backgroundColor = '#fff'
+  }, [])
   return (
     <Main footerTxtColor={'black'}>
+      <ScrollToTop />
       <ProjectL data={landing} color={'#029FC7'} />
       <ProjectB src={'/ulnaris-main-logo.png'} name={'Ulnaris Physiotherapy'} />
       <ProjectO

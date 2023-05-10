@@ -34,7 +34,6 @@ const Project = ({
   }, [inView, ctrls, company, theme])
 
   const handleUrl = () => {
-    document.body.style.backgroundColor = '#fff'
     navigate(`/${url}`)
   }
 

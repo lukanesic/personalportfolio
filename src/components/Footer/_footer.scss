@@ -3,6 +3,16 @@ footer {
   // margin-top: 10rem;
   position: relative;
 
+  margin-top: 15rem;
+
+  @include Pads() {
+    margin-top: 0;
+  }
+
+  @include Laptops() {
+    margin-top: 0;
+  }
+
   h1 {
     font-size: 36px;
     padding: 2rem 0;

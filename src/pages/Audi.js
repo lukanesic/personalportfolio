@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Main from '../layout/Main'
 
 import ProjectL from '../components/ProjectL'
@@ -13,6 +13,9 @@ const landing = {
 }
 
 const Audi = () => {
+  useEffect(() => {
+    document.body.style.backgroundColor = '#fff'
+  }, [])
   return (
     <Main footerTxtColor={'black'}>
       <ProjectL data={landing} color={'#000'} />

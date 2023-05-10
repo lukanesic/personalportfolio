@@ -1,14 +1,15 @@
 .process {
   color: #fff;
 
-  border: 1px solid red;
+  // border: 1px solid red;
 
   @include Pads() {
     display: grid;
     grid-template-columns: repeat(2, 45%);
     grid-gap: 5rem;
     justify-content: space-between;
-    margin: 5rem auto;
+    // margin: 5rem auto;
+    margin: 0rem auto;
   }
 
   @include Laptops() {
@@ -16,7 +17,8 @@
     grid-template-columns: repeat(4, 20%);
     grid-gap: 5rem;
     justify-content: space-between;
-    margin: 5rem auto;
+    // margin: 5rem auto;
+    margin: 0rem auto;
   }
 
   .process-container {

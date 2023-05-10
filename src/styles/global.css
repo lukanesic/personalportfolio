@@ -69,6 +69,24 @@ body {
   color: #fff !important;
 }
 
+@media (min-width: 735px) and (max-width: 1279px) {
+  .space {
+    height: -moz-fit-content;
+    height: fit-content;
+    display: grid;
+    place-content: center;
+    margin-bottom: 10rem;
+  }
+}
+@media (min-width: 1280px) {
+  .space {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    margin-bottom: 10rem;
+  }
+}
+
 nav {
   position: fixed;
   top: 0rem;
@@ -126,6 +144,17 @@ nav .nav-right span {
 footer {
   width: 100%;
   position: relative;
+  margin-top: 15rem;
+}
+@media (min-width: 735px) and (max-width: 1279px) {
+  footer {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1280px) {
+  footer {
+    margin-top: 0;
+  }
 }
 footer h1 {
   font-size: 36px;
@@ -250,7 +279,6 @@ footer .credits h4 {
 }
 
 .heading-section {
-  padding: 5rem 0 5rem;
   color: #1c1d1f;
 }
 .heading-section h2 {
@@ -420,7 +448,6 @@ footer .credits h4 {
 
 .process {
   color: #fff;
-  border: 1px solid red;
 }
 @media (min-width: 735px) and (max-width: 1279px) {
   .process {
@@ -428,7 +455,7 @@ footer .credits h4 {
     grid-template-columns: repeat(2, 45%);
     grid-gap: 5rem;
     justify-content: space-between;
-    margin: 5rem auto;
+    margin: 0rem auto;
   }
 }
 @media (min-width: 1280px) {
@@ -437,7 +464,7 @@ footer .credits h4 {
     grid-template-columns: repeat(4, 20%);
     grid-gap: 5rem;
     justify-content: space-between;
-    margin: 5rem auto;
+    margin: 0rem auto;
   }
 }
 .process .process-container {

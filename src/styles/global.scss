@@ -69,6 +69,22 @@ body {
   color: #fff !important;
 }
 
+.space {
+  @include Pads() {
+    height: fit-content;
+    display: grid;
+    place-content: center;
+    margin-bottom: 10rem;
+  }
+
+  @include Laptops() {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    margin-bottom: 10rem;
+  }
+}
+
 @import './../components/Nav/nav';
 @import './../components/Footer/footer';
 
