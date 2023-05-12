@@ -17,30 +17,46 @@ const Footer = ({ footerTxtColor }) => {
       </div>
 
       <div className='socials wrapper'>
-        <span className='mail'>lukannesic@gmail.com</span>
-        <span className='icon'>
-          <img
-            src={
-              footerTxtColor && footerTxtColor === 'black'
-                ? '/github-dark.png'
-                : '/github.png'
-            }
-            alt={'github'}
-            width={'25'}
-            height={'25'}
-          />{' '}
+        <span className='mail link'>
+          {' '}
+          <a href='mailto:lukannesic@gmail.com'>lukannesic@gmail.com</a>
         </span>
-        <span className='icon'>
-          <img
-            src={
-              footerTxtColor && footerTxtColor === 'black'
-                ? '/linkedin-dark.png'
-                : '/linkedin.png'
-            }
-            alt={'linkedin'}
-            width={'25'}
-            height={'25'}
-          />{' '}
+        <span className='icon link'>
+          <a
+            href='https://github.com/lukanesic'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img
+              src={
+                footerTxtColor && footerTxtColor === 'black'
+                  ? '/github-dark.png'
+                  : '/github.png'
+              }
+              alt={'github'}
+              width={'25'}
+              height={'25'}
+            />{' '}
+          </a>
+        </span>
+        <span className='icon link'>
+          <a
+            href='https://www.linkedin.com/in/lukanesic/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {' '}
+            <img
+              src={
+                footerTxtColor && footerTxtColor === 'black'
+                  ? '/linkedin-dark.png'
+                  : '/linkedin.png'
+              }
+              alt={'linkedin'}
+              width={'25'}
+              height={'25'}
+            />{' '}
+          </a>
         </span>
         {/* <span className='icon'>
           <Image src={cv} alt={'CV'} width={'25'} height={'25'} />{' '}

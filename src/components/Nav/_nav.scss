@@ -56,4 +56,63 @@ nav {
       display: none;
     }
   }
+
+  .nav-content {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    height: 80%;
+    place-content: center;
+
+    @include Laptops() {
+      grid-template-columns: repeat(3, 25%);
+      place-content: unset;
+
+      height: fit-content;
+      margin-top: 5rem;
+    }
+
+    .content {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      .s-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 1rem;
+        font-weight: 300;
+        letter-spacing: -0.2px;
+
+        @include Pads() {
+          font-size: 18px;
+        }
+
+        @include Laptops() {
+          font-size: 26px;
+        }
+      }
+
+      .li {
+        margin-bottom: 0.5rem;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        @include Pads() {
+          font-size: 20px;
+        }
+
+        @include Laptops() {
+          font-size: 28px;
+        }
+      }
+    }
+  }
 }
