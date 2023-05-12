@@ -110,6 +110,7 @@ const Nav = () => {
               <span className='li'>MongoDB</span>
               <span className='li'>Firebase</span>
               <span className='li'>Framer Motion</span>
+              <span className='li'>Figma</span>
             </div>
 
             <div className='content'>
