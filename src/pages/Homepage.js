@@ -21,7 +21,7 @@ const data = [
   },
   {
     company: 'Ulnaris Psyhiotherapy',
-    title: 'Application for entering patients into database',
+    title: 'Application for managing patients and examinations',
     tech: 'web app, design, development',
     src: '/ulnaris.png',
     theme: 'rgba(214, 231, 246, 0.45)',
@@ -137,7 +137,7 @@ const Homepage = () => {
           <Process data={process} />
         </div>
 
-        <div className='space'>
+        {/* <div className='space'>
           <HeadingSection
             paragraph={
               'Webflow offers a unique blend of no-coding, customization, SEO-friendliness, and e-commerce capabilities.'
@@ -147,7 +147,7 @@ const Homepage = () => {
           />
 
           <Process data={webflow} />
-        </div>
+        </div> */}
       </Main>
     </>
   )

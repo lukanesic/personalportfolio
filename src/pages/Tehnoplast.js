@@ -28,7 +28,7 @@ const Tehnoplast = () => {
         <ProjectL data={landing} color={'#F28C26'} />
         <ProjectB src={'/tehno-b.png'} name={'Tehnoplast'} />
         <ProjectO
-          overview={`Using Figma for prototyping & design, Next.js for development and Framer Motion for animations, i created a website that is intuitive, efficient, and easy to use for my client's business needs.`}
+          overview={`Using Figma for prototyping and design, Next.js for development and Framer Motion for animations, i created a website that is intuitive, efficient, and easy to use for my client's business needs.`}
         />
         <ProjectI
           src={'/tehno-full.png'}

@@ -11,8 +11,8 @@ const landing = {
   client: 'Ulnaris Physiotherapy',
   services: ['UX', 'Design', 'Development'],
   tech: ['Figma', 'React', 'Redux Toolkit', 'Firebase', 'Framer Motion'],
-  title: 'Application for entering patients into database',
-  intro: `The client approached me to re-design a website showcasing their PVC products and projects, and I'm excited to bring their vision to life.`,
+  title: 'Application for managing patients and examinations',
+  intro: `A newly opened physiotherapy studio has requested me to develop a web application to streamline their operations.`,
 }
 
 const Ulnaris = () => {
@@ -26,7 +26,7 @@ const Ulnaris = () => {
       <ProjectL data={landing} color={'#029FC7'} />
       <ProjectB src={'/ulnaris-main-logo.png'} name={'Ulnaris Physiotherapy'} />
       <ProjectO
-        overview={`Using Figma for prototyping & design, Next.js for development and Framer Motion for animations, i created a website that is intuitive, efficient, and easy to use for my client's business needs.`}
+        overview={`This application was built using React, Framer Motion, and Redux Toolkit for development, state management and UX, with design done in Figma, and Firebase used for database storage.`}
       />
       <ProjectI
         src={'/Ulnarisgroup.png'}

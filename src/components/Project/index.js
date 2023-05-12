@@ -60,22 +60,30 @@ const Project = ({
       className={`project wrapper ${reverse && 'project-reverse'}`}
       ref={ref}
     >
-      <div className='img'>
+      <motion.div
+        className='img'
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 0.97 }}
+        transition={{
+          duration: 0.5,
+        }}
+        onClick={() => handleUrl()}
+      >
         <img
           src={src}
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           alt={title}
         />
-      </div>
+      </motion.div>
       <div className='info'>
         <h4 className={`${txtClass && 'white-text'}`}>{company}</h4>
         <h2 className={`${txtClass && 'white-text'}`}>{title}</h2>
-        <h6
+        <motion.h6
           className={`${txtClass && 'white-text'}`}
           onClick={() => handleUrl()}
         >
           {'View Project'}
-        </h6>
+        </motion.h6>
       </div>
     </motion.div>
   )

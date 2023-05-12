@@ -8,10 +8,10 @@ import ProjectI from '../components/ProjectI'
 
 const landing = {
   client: 'Jugometal',
-  services: ['UX', 'Design', 'Development'],
-  tech: ['Figma', 'Next.js', 'Framer Motion'],
-  title: 'Production & installation of ALU & PVC joinery',
-  intro: `The client approached me to re-design a website showcasing their PVC products and projects, and I'm excited to bring their vision to life.`,
+  services: ['UX', 'Re-Design', 'Development'],
+  tech: ['Next.js', 'Redux Toolkit', 'MongoDB', 'Mongoose', 'Framer Motion'],
+  title: 'Tractors & agricultural machinery',
+  intro: `I was tasked with converting a WordPress website into a Next.js website, ensuring that all of the original functionalities, including admin and e-commerce capabilities were retained.`,
 }
 
 const Jugometal = () => {
@@ -24,7 +24,7 @@ const Jugometal = () => {
       <ProjectL data={landing} color={'#ED1D24'} />
       <ProjectB src={'/jugo-logo.png'} name={'Jugometal'} />
       <ProjectO
-        overview={`Using Figma for prototyping & design, Next.js for development and Framer Motion for animations, i created a website that is intuitive, efficient, and easy to use for my client's business needs.`}
+        overview={`For the development of the website, I utilized Next.js for its server-side rendering capabilities and SEO benefits, MongoDB as the database and Redux Toolkit for state managment.`}
       />
       <ProjectI
         src={'/jugo-new.png'}
