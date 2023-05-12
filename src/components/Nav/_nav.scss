@@ -65,7 +65,7 @@ nav {
     place-content: center;
 
     @include Laptops() {
-      grid-template-columns: repeat(3, 32%);
+      grid-template-columns: repeat(3, 35%);
       place-content: unset;
 
       height: fit-content;
@@ -112,6 +112,12 @@ nav {
         @include Laptops() {
           font-size: 28px;
         }
+      }
+    }
+
+    .s-mg {
+      @include Laptops() {
+        margin-top: -7.8rem;
       }
     }
   }

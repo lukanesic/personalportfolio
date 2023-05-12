@@ -156,7 +156,7 @@ nav .nav-content {
 }
 @media (min-width: 1280px) {
   nav .nav-content {
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(3, 35%);
     place-content: unset;
     height: -moz-fit-content;
     height: fit-content;
@@ -204,6 +204,11 @@ nav .nav-content .content .li a {
 @media (min-width: 1280px) {
   nav .nav-content .content .li {
     font-size: 28px;
+  }
+}
+@media (min-width: 1280px) {
+  nav .nav-content .s-mg {
+    margin-top: -7.8rem;
   }
 }
 

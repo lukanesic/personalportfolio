@@ -113,7 +113,7 @@ const Nav = () => {
               <span className='li'>Figma</span>
             </div>
 
-            <div className='content'>
+            <div className='content s-mg'>
               <span className='s-title'>get in touch</span>
               <span
                 className='li'
