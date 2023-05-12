@@ -18,6 +18,7 @@ const landing = {
 const Ulnaris = () => {
   useEffect(() => {
     document.body.style.backgroundColor = '#fff'
+    window.scrollTo(0, 0)
   }, [])
   return (
     <Main footerTxtColor={'black'}>

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Cross as Hamburger } from 'hamburger-react'
+import { useNavigate } from 'react-router-dom'
 
 const Nav = () => {
   const [isOpen, setOpen] = useState(false)
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (isOpen) {
@@ -28,11 +31,16 @@ const Nav = () => {
     >
       <div className='nav-container wrapper'>
         <div className='nav-left'>
-          <div className='logo'>
-            <h1>
+          <motion.div
+            className='logo'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            <h1 onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
               ln. <span>Frontend Web Developer</span>
             </h1>
-          </div>
+          </motion.div>
         </div>
 
         <div className='nav-right'>

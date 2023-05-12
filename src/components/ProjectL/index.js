@@ -1,25 +1,49 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+
+const animation = {
+  initial: { opacity: 0, y: 10 },
+  animate: { opacity: 1, y: 0 },
+}
 
 const ProjectL = ({ data, color }) => {
   return (
     <div className='projectl wrapper'>
       <div className='list'>
-        <div className='list-content'>
+        <motion.div
+          className='list-content'
+          variants={animation}
+          initial='initial'
+          animate='animate'
+          transition={{ delay: 0.2, duration: 0.7 }}
+        >
           <span className='s-title'>client</span>
           <span className='li' style={{ color: color }}>
             {data.client}
           </span>
-        </div>
-        <div className='list-content'>
+        </motion.div>
+        <motion.div
+          className='list-content'
+          variants={animation}
+          initial='initial'
+          animate='animate'
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
           <span className='s-title'>services</span>
           {data.services.map((li, index) => (
             <span key={index} className='li'>
               {li}
             </span>
           ))}
-        </div>
+        </motion.div>
         <div className='empty'></div>
-        <div className='list-content'>
+        <motion.div
+          className='list-content'
+          variants={animation}
+          initial='initial'
+          animate='animate'
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
           {' '}
           <span className='s-title'>tech</span>
           {data.tech.map((li, index) => (
@@ -27,12 +51,18 @@ const ProjectL = ({ data, color }) => {
               {li}
             </span>
           ))}
-        </div>
+        </motion.div>
       </div>
-      <div className='intro'>
+      <motion.div
+        className='intro'
+        variants={animation}
+        initial='initial'
+        animate='animate'
+        transition={{ delay: 0.4, duration: 0.7 }}
+      >
         <h2>{data.title}</h2>
         <p>{data.intro}</p>
-      </div>
+      </motion.div>
     </div>
   )
 }
