@@ -103,9 +103,7 @@ const Homepage = () => {
         <Landing />
         <HeadingSection
           title={'work.'}
-          paragraph={
-            'Each client is unique and so is each project. Here is quick glimpse of my portfolio.'
-          }
+          paragraph={' Here is quick glimpse of my portfolio.'}
         />
 
         {data.map((project, index) => (
