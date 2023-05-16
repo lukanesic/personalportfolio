@@ -38,7 +38,7 @@ const Nav = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             <h1 onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-              ln. <span>Frontend Web Developer</span>
+              nl. <span>Frontend Web Developer</span>
             </h1>
           </motion.div>
         </div>

@@ -65,7 +65,7 @@ const Footer = ({ footerTxtColor }) => {
       <div className='linear-anim'></div>
       <div className='credits wrapper'>
         <h4>
-          Design & Development <span>Luka Nešić</span>{' '}
+          Design & Development <span>Nešić Luka</span>{' '}
         </h4>
       </div>
 
