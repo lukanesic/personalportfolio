@@ -11,8 +11,8 @@ const Footer = ({ footerTxtColor }) => {
         <h1>{`Contact`}</h1>
         <div className='hor-line'></div>
         <p>
-          Get in touch for opportunities or just say hi! If you have a general
-          enquiry, please drop me an email.{' '}
+          Feel free to reach out and connect with me for any inquiries or
+          collaborations!{' '}
         </p>
       </div>
 
