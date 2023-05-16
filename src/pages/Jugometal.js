@@ -25,6 +25,8 @@ const Jugometal = () => {
       <ProjectB src={'/jugo-logo.png'} name={'Jugometal'} />
       <ProjectO
         overview={`For the development of the website, I utilized Next.js for its server-side rendering capabilities and SEO benefits, MongoDB as the database and Redux Toolkit for state managment.`}
+        placeholder={'Visit Live Website'}
+        link={'https://jugometal-2sdt.vercel.app/'}
       />
       <ProjectI
         src={'/jugo-new.png'}

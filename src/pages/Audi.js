@@ -23,6 +23,8 @@ const Audi = () => {
       <ProjectB src={'/audi-sm.png'} name={'Audi'} bg />
       <ProjectO
         overview={`To replicate the behavior of the Tesla website, I employed React as the framework, Framer Motion for animations, and Redux for state management, allowing for a original user experience.`}
+        placeholder={'Visit Live Project'}
+        link={'https://custom-audi.netlify.app/'}
       />
     </Main>
   )

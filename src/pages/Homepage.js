@@ -6,10 +6,16 @@ import Main from '../layout/Main'
 
 import Process from '../components/Process'
 
-import { motion } from 'framer-motion'
-import ScrollToTop from '../hooks/scrollToTop'
-
 const data = [
+  {
+    company: 'Ulnaris Psyhiotherapy',
+    title: 'Application for managing patients and examinations',
+    tech: 'web app, design, development',
+    src: '/ulnaris.png',
+    theme: 'rgba(214, 231, 246, 0.45)',
+    text: 'black',
+    url: 'ulnaris',
+  },
   {
     company: 'Tehnoplast',
     title: 'Production & installation of ALU & PVC joinery',
@@ -18,17 +24,9 @@ const data = [
     theme: 'rgba(253, 235, 218, 0.45)',
     text: 'black',
     url: 'tehnoplast',
-  },
-  {
-    company: 'Ulnaris Psyhiotherapy',
-    title: 'Application for managing patients and examinations',
-    tech: 'web app, design, development',
-    src: '/ulnaris.png',
-    theme: 'rgba(214, 231, 246, 0.45)',
-    text: 'black',
     reverse: true,
-    url: 'ulnaris',
   },
+
   {
     company: 'Jugometal',
     title: 'Tractors & agricultural machinery',

@@ -5,8 +5,6 @@ import ProjectL from '../components/ProjectL'
 import ProjectB from '../components/ProjectB'
 import ProjectO from '../components/ProjectO'
 import ProjectI from '../components/ProjectI'
-import { motion } from 'framer-motion'
-import ScrollToTop from '../hooks/scrollToTop'
 
 const landing = {
   client: 'Tehnoplast',
@@ -29,6 +27,8 @@ const Tehnoplast = () => {
         <ProjectB src={'/tehno-b.png'} name={'Tehnoplast'} />
         <ProjectO
           overview={`Using Figma for prototyping and design, Next.js for development and Framer Motion for animations, i created a website that is intuitive, efficient, and easy to use for my client's business needs.`}
+          placeholder={'Visit Live Website'}
+          link={'https://tehnoplast.vercel.app/de'}
         />
         <ProjectI
           src={'/tehno-full.png'}

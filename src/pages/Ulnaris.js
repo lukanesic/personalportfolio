@@ -27,6 +27,8 @@ const Ulnaris = () => {
       <ProjectB src={'/ulnaris-main-logo.png'} name={'Ulnaris Physiotherapy'} />
       <ProjectO
         overview={`This application was built using React, Framer Motion, and Redux Toolkit for development, state management and UX, with design done in Figma, and Firebase used for database storage.`}
+        placeholder={'Visit Live App'}
+        link={'https://mdapp-tau.vercel.app/'}
       />
       <ProjectI
         src={'/Ulnarisgroup.png'}
