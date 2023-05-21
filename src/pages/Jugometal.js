@@ -9,7 +9,7 @@ import ProjectI from '../components/ProjectI'
 const landing = {
   client: 'Jugometal',
   services: ['UX', 'Re-Design', 'Development'],
-  tech: ['Next.js', 'Redux Toolkit', 'MongoDB', 'Mongoose', 'Framer Motion'],
+  tech: ['Next.js', 'Redux Toolkit', 'MongoDB', 'Mongoose','SCSS', 'Framer Motion'],
   title: 'Tractors & agricultural machinery',
   intro: `I was tasked with converting a WordPress website into a Next.js website, ensuring that all of the original functionalities, including admin and e-commerce capabilities were retained.`,
 }

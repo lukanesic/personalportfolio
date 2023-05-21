@@ -9,7 +9,7 @@ import ProjectI from '../components/ProjectI'
 const landing = {
   client: 'Tehnoplast',
   services: ['UX', 'Design', 'Development'],
-  tech: ['Figma', 'Next.js', 'Framer Motion'],
+  tech: ['Figma', 'Next.js','SCSS','Framer Motion'],
   title: 'Production & installation of ALU & PVC joinery',
   intro: `The client approached me to re-design a website showcasing their PVC products and projects, and I'm excited to bring their vision to life.`,
 }

@@ -10,7 +10,7 @@ import ScrollToTop from '../hooks/scrollToTop'
 const landing = {
   client: 'Ulnaris Physiotherapy',
   services: ['UX', 'Design', 'Development'],
-  tech: ['Figma', 'React', 'Redux Toolkit', 'Firebase', 'Framer Motion'],
+  tech: ['Figma', 'React', 'Redux Toolkit','SCSS','Firebase', 'Framer Motion'],
   title: 'Application for managing patients and examinations',
   intro: `A newly opened physiotherapy studio has requested me to develop a web application to streamline their operations.`,
 }

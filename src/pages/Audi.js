@@ -7,7 +7,7 @@ import ProjectO from '../components/ProjectO'
 const landing = {
   client: 'Personal Project',
   services: ['Design', 'Development'],
-  tech: ['React', 'Redux Toolkit', 'Framer Motion'],
+  tech: ['React', 'Redux Toolkit','SCSS','Framer Motion'],
   title: 'Tesla inspired website design with Audi models',
   intro: `Taking inspiration from the sleek and modern designs of Tesla's website and Audi's car models, I re-created a website with a similarly look.`,
 }
