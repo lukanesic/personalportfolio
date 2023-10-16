@@ -1,16 +1,18 @@
 import React from 'react'
 
-const ProjectO = ({ overview, placeholder, link }) => {
+const ProjectO = ({ overview, placeholder, link, custom }) => {
   return (
     <div className='projecto wrapper'>
-      <h3>design & tech</h3>
+      {custom ? <h3>{custom}</h3> : <h3>design & tech</h3>}
       <div className='projecto-desc'>
         <p>{overview}</p>
-        <span className='btn'>
-          <a href={link} target='_blank' rel='noopener noreferrer'>
-            {placeholder}
-          </a>
-        </span>
+        {link && (
+          <span className='btn'>
+            <a href={link} target='_blank' rel='noopener noreferrer'>
+              {placeholder}
+            </a>
+          </span>
+        )}
       </div>
     </div>
   )

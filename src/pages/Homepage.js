@@ -8,6 +8,16 @@ import Process from '../components/Process'
 
 const data = [
   {
+    company: 'I&DCOM',
+    title: 'Hardware, print optimization, and office supplies',
+    tech: 'design, web application, development',
+    src: '/idcom.png',
+    theme: 'rgba(255, 242, 0, 0.05)',
+    text: 'black',
+    url: 'i&dcom',
+    reverse: true,
+  },
+  {
     company: 'Ulnaris Psyhiotherapy',
     title: 'Application for managing patients and examinations',
     tech: 'web app, design, development',
@@ -27,15 +37,15 @@ const data = [
     reverse: true,
   },
 
-  {
-    company: 'Jugometal',
-    title: 'Tractors & agricultural machinery',
-    tech: 'redesign, web, development',
-    src: '/jugo-project-1.png',
-    theme: 'rgba(242, 226, 225, 0.45)',
-    text: 'black',
-    url: 'jugometal',
-  },
+  // {
+  //   company: 'Jugometal',
+  //   title: 'Tractors & agricultural machinery',
+  //   tech: 'redesign, web, development',
+  //   src: '/jugo-project-1.png',
+  //   theme: 'rgba(242, 226, 225, 0.45)',
+  //   text: 'black',
+  //   url: 'jugometal',
+  // },
   {
     company: 'Audi & Tesla',
     title: 'Tesla inspired website design with Audi models',

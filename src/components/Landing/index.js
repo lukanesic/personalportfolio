@@ -15,7 +15,7 @@ const Landing = () => {
   return (
     <div className='landing wrapper'>
       <div className='heading'>
-        <h1 className='main-head'>Designing & Developing Websites</h1>
+        <h1 className='main-head'>Designing & Developing on Web</h1>
         <span className='main-moto' ref={ref}>
           Simplicity & Usability
         </span>
