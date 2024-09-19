@@ -9,18 +9,22 @@ import Idcom from '../../pages/Idcom'
 import New from '../../pages/New'
 import About from '../../pages/about'
 
+import { MyContextProvider } from '../../store/ThemeContext'
+
 const AnimatedRoutes = () => {
   return (
-    <Routes>
-      <Route path='/' element={<Homepage />} />
-      <Route path='/tehnoplast' element={<Tehnoplast />} />
-      <Route path='/ulnaris' element={<Ulnaris />} />
-      {/* <Route path='/jugometal' element={<Jugometal />} /> */}
-      <Route path='/i&dcom' element={<Idcom />} />
-      <Route path='/audi' element={<Audi />} />
-      <Route path='/new' element={<New />} />
-      {/* <Route path='/about' element={<About />} /> */}
-    </Routes>
+    <MyContextProvider>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/tehnoplast' element={<Tehnoplast />} />
+        <Route path='/ulnaris' element={<Ulnaris />} />
+        {/* <Route path='/jugometal' element={<Jugometal />} /> */}
+        <Route path='/i&dcom' element={<Idcom />} />
+        <Route path='/audi' element={<Audi />} />
+        {/* <Route path='/new' element={<New />} /> */}
+        {/* <Route path='/about' element={<About />} /> */}
+      </Routes>
+    </MyContextProvider>
   )
 }
 

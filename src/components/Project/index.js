@@ -171,8 +171,8 @@ export const LastProjectReview = () => {
     <motion.div
       className='project-review'
       onClick={() => handleUrl()}
-      ref={ref}
       style={{ opacity: theme === 'dark' ? '0' : '1' }}
+      ref={ref}
     >
       <div className='pr-img'>
         <motion.img

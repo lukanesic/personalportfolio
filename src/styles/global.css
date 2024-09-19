@@ -14,10 +14,8 @@ html {
 body {
   transition: background-color 1s ease;
   width: 100%;
-  overflow: hidden;
   position: relative;
   height: 100%;
-  overflow-y: hidden;
 }
 
 .wrapper {
@@ -93,59 +91,6 @@ body {
     place-content: center;
     margin-bottom: 10rem;
   }
-}
-
-.modelsWrapper {
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  -webkit-scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  z-index: 1000;
-}
-
-.overlaysRoot {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.modelOverlay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  margin-top: -100vh;
-}
-
-.modelSection {
-  padding: 0rem 1rem;
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
-.modelSection:nth-child(1) {
-  background-color: rgba(255, 242, 0, 0.05);
-}
-
-.modelSection:nth-child(2) {
-  background-color: rgba(214, 231, 246, 0.45);
-}
-
-.modelSection:nth-child(3) {
-  background-color: rrgba(253, 235, 218, 0.45);
-}
-
-.modelSection:nth-child(4) {
-  background-color: #000;
-}
-
-.modelSection:nth-child(5) {
-  background-color: rgba(87, 33, 33, 0.369);
 }
 
 nav {
@@ -278,8 +223,6 @@ footer {
   width: 100%;
   position: relative;
   padding-top: 4rem;
-  background-color: #000;
-  color: #fff !important;
 }
 @media (min-width: 735px) and (max-width: 1279px) {
   footer {
@@ -320,7 +263,6 @@ footer .services-container .services-box span {
 footer .main-btn {
   border: none;
   background-color: #1c1d1f;
-  color: #fff !important;
   padding: 1rem 2rem;
   border-radius: 5px;
   cursor: pointer;
@@ -793,7 +735,7 @@ footer .credits h4 {
 @media (min-width: 1280px) {
   .vertical-process {
     flex-direction: row;
-    margin-top: -5rem;
+    margin-top: 15rem;
   }
 }
 .vertical-process .vertical-process-line {
@@ -1194,11 +1136,11 @@ footer .credits h4 {
 
 .menu {
   position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
+  top: 1rem;
+  height: 70vh;
+  width: 80vw;
   padding: 2rem 6rem;
-  right: 0;
+  right: 1rem;
   background-color: #fff;
   z-index: 111;
   display: flex;

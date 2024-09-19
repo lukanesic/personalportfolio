@@ -111,9 +111,8 @@ export const VerticalProcess = ({}) => {
       initial='hidden'
       animate={ctrls}
       variants={variants}
-      ref={ref}
     >
-      <div className='vertical-process-desc'>
+      <div className='vertical-process-desc' ref={ref}>
         <h2>Development process.</h2>
         <p>
           We rely on imagination and technical prowess to help brands transform,

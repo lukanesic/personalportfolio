@@ -11,7 +11,7 @@ const Nav = ({ isOpen, setOpen }) => {
 
   return (
     <motion.nav
-      animate={{ height: isOpen ? '100vh' : '81px' }}
+      // animate={{ height: isOpen ? '100vh' : '81px' }}
       transition={{ duration: 0.7 }}
     >
       {/* wrapper je bio ovde */}
@@ -42,7 +42,7 @@ const Nav = ({ isOpen, setOpen }) => {
             toggled={isOpen}
             toggle={setOpen}
             size={24}
-            color={theme === 'dark' ? '#fff' : '#282828'}
+            color={isOpen ? '#000' : theme === 'dark' ? '#fff' : '#000'}
           />
         </div>
       </div>

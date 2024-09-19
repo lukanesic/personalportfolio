@@ -3,21 +3,21 @@ import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const Menu = ({ isOpen }) => {
-  useEffect(() => {
-    if (isOpen) {
-      const width = document.body.clientWidth
-      document.body.style.overflowY = 'hidden'
-      document.body.style.width = `${width}px`
-    } else {
-      document.body.style.overflowY = 'visible'
-      document.body.style.width = `auto`
-    }
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     const width = document.body.clientWidth
+  //     document.body.style.overflowY = 'hidden'
+  //     document.body.style.width = `${width}px`
+  //   } else {
+  //     document.body.style.overflowY = 'visible'
+  //     document.body.style.width = `auto`
+  //   }
 
-    return () => {
-      document.body.style.overflowY = 'visible'
-      document.body.style.width = `auto`
-    }
-  }, [isOpen])
+  //   return () => {
+  //     document.body.style.overflowY = 'visible'
+  //     document.body.style.width = `auto`
+  //   }
+  // }, [isOpen])
 
   return (
     <motion.div

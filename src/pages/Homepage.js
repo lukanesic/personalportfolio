@@ -8,7 +8,6 @@ import Project, {
 import Main from '../layout/Main'
 
 import Process, { VerticalProcess } from '../components/Process'
-import { MyContextProvider } from '../store/ThemeContext'
 
 const data = [
   {
@@ -137,9 +136,9 @@ const webflow = [
 
 const Homepage = () => {
   return (
-    <MyContextProvider>
+    <div>
       {/* <ScrollToTop /> */}
-      <Main footerTxtColor={'black'}>
+      <Main footerTxtColor={'white'}>
         <Landing />
         <HeadingSection
           title={'Work.'}
@@ -188,7 +187,7 @@ const Homepage = () => {
         {/* <Process data={process} /> */}
         <VerticalProcess />
       </Main>
-    </MyContextProvider>
+    </div>
   )
 }
 

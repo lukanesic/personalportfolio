@@ -16,7 +16,17 @@ const Footer = ({ footerTxtColor }) => {
         </p>
 
         <div className='services-container'>
-          <span className='services-subhead'>Services</span>
+          <span
+            className='services-subhead'
+            style={{
+              color:
+                footerTxtColor && footerTxtColor === 'black'
+                  ? 'rgba(0, 0, 0, 0.5)'
+                  : 'rgba(255, 255, 255, 0.5)',
+            }}
+          >
+            Services
+          </span>
           <div className='services-box'>
             <span>Mobile App Development</span>
             <span>iOS Development</span>
@@ -49,7 +59,16 @@ const Footer = ({ footerTxtColor }) => {
       <div className='socials wrapper'>
         <span className='mail link'>
           {' '}
-          <a href='mailto:lukannesic@gmail.com' className='main-btn'>
+          <a
+            href='mailto:lukannesic@gmail.com'
+            className='main-btn'
+            style={{
+              color:
+                footerTxtColor && footerTxtColor === 'black' ? '#fff' : '#000',
+              background:
+                footerTxtColor && footerTxtColor === 'black' ? '#000' : '#fff',
+            }}
+          >
             Get in touch
           </a>
         </span>
