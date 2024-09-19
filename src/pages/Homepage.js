@@ -1,17 +1,22 @@
 import React from 'react'
 import HeadingSection from '../components/HeadingSection'
 import Landing from '../components/Landing'
-import Project from '../components/Project'
+import Project, {
+  LastProjectReview,
+  ProjectReview,
+} from '../components/Project'
 import Main from '../layout/Main'
 
-import Process from '../components/Process'
+import Process, { VerticalProcess } from '../components/Process'
+import { MyContextProvider } from '../store/ThemeContext'
 
 const data = [
   {
     company: 'I&DCOM',
     title: 'Hardware, print optimization, and office supplies',
     tech: 'design, web application, development',
-    src: '/idcom.png',
+    // src: '/idcom.png',
+    src: '/test1.webp',
     theme: 'rgba(255, 242, 0, 0.05)',
     text: 'black',
     url: 'i&dcom',
@@ -21,7 +26,8 @@ const data = [
     company: 'Ulnaris Psyhiotherapy',
     title: 'Application for managing patients and examinations',
     tech: 'web app, design, development',
-    src: '/ulnaris.png',
+    // src: '/ulnaris.png',
+    src: '/test2.webp',
     theme: 'rgba(214, 231, 246, 0.45)',
     text: 'black',
     url: 'ulnaris',
@@ -30,33 +36,57 @@ const data = [
     company: 'Tehnoplast',
     title: 'Production & installation of ALU & PVC joinery',
     tech: 'redesign, web, development',
-    src: '/tehno-1-min.png',
+    // src: '/tehno-1-min.png',
+    src: '/test3.webp',
+    theme: 'rgba(253, 235, 218, 0.45)',
+    text: 'black',
+    url: 'tehnoplast',
+    reverse: true,
+  },
+  {
+    company: 'Ulnaris Psyhiotherapy',
+    title: 'Application for managing patients and examinations',
+    tech: 'web app, design, development',
+    // src: '/ulnaris.png',
+    src: '/test2.webp',
+    theme: 'rgba(214, 231, 246, 0.45)',
+    text: 'black',
+    url: 'ulnaris',
+  },
+  {
+    company: 'Tehnoplast',
+    title: 'Production & installation of ALU & PVC joinery',
+    tech: 'redesign, web, development',
+    // src: '/tehno-1-min.png',
+    src: '/test3.webp',
     theme: 'rgba(253, 235, 218, 0.45)',
     text: 'black',
     url: 'tehnoplast',
     reverse: true,
   },
 
-  // {
-  //   company: 'Jugometal',
-  //   title: 'Tractors & agricultural machinery',
-  //   tech: 'redesign, web, development',
-  //   src: '/jugo-project-1.png',
-  //   theme: 'rgba(242, 226, 225, 0.45)',
-  //   text: 'black',
-  //   url: 'jugometal',
-  // },
   {
-    company: 'Audi & Tesla',
-    title: 'Tesla inspired website design with Audi models',
-    tech: 'personal project, web, development',
-    src: '/audi.png',
-    theme: '#000',
-    text: 'white',
-    reverse: true,
-    txtClass: true,
-    url: 'audi',
+    company: 'Jugometal',
+    title: 'Tractors & agricultural machinery',
+    tech: 'redesign, web, development',
+    src: '/jugo-project-1.png',
+    theme: 'rgba(242, 226, 225, 0.45)',
+    text: 'black',
+    url: 'jugometal',
   },
+  // {
+  //   company: 'Audi & Tesla',
+  //   title: 'Tesla inspired website design with Audi models',
+  //   tech: 'personal project, web, development',
+  //   // src: '/audi.png',
+  //   src: '/test4.jpg',
+  //   theme: '#000',
+  //   text: 'white',
+  //   reverse: true,
+  //   txtClass: true,
+  //   url: 'audi',
+  //   ref: true,
+  // },
 ]
 
 const process = [
@@ -107,16 +137,32 @@ const webflow = [
 
 const Homepage = () => {
   return (
-    <>
+    <MyContextProvider>
       {/* <ScrollToTop /> */}
-      <Main>
+      <Main footerTxtColor={'black'}>
         <Landing />
         <HeadingSection
-          title={'work.'}
-          paragraph={' Here is quick glimpse of my portfolio.'}
+          title={'Work.'}
+          paragraph={
+            'Focused on innovative, unconventional solutions. Pushing limits to surpass client ambitions.'
+          }
         />
 
-        {data.map((project, index) => (
+        <div className='project-review-container wrapper'>
+          {data.map((project, index) => (
+            <ProjectReview
+              i={index}
+              key={index}
+              src={project.src}
+              url={project.url}
+              r={project.ref}
+              total={data.length}
+            />
+          ))}
+          <LastProjectReview />
+        </div>
+
+        {/* {data.map((project, index) => (
           <Project
             key={index}
             company={project.company}
@@ -129,33 +175,20 @@ const Homepage = () => {
             txtClass={project.txtClass && project.txtClass}
             url={project.url}
           />
-        ))}
+        ))} */}
 
-        <div className='space'>
-          <HeadingSection
-            title={'process.'}
-            paragraph={
-              'The frontend development process involves design, coding, testing, and optimization.'
-            }
-            light
-          />
+        {/* <HeadingSection
+          title={'Development process.'}
+          paragraph={
+            'Advanced front-end and back-end development strategies, utilizing cutting-edge frameworks and libraries for seamless integration.'
+          }
+          // light
+        /> */}
 
-          <Process data={process} />
-        </div>
-
-        {/* <div className='space'>
-          <HeadingSection
-            paragraph={
-              'Webflow offers a unique blend of no-coding, customization, SEO-friendliness, and e-commerce capabilities.'
-            }
-            light
-            webflow={'or choose webflow.'}
-          />
-
-          <Process data={webflow} />
-        </div> */}
+        {/* <Process data={process} /> */}
+        <VerticalProcess />
       </Main>
-    </>
+    </MyContextProvider>
   )
 }
 

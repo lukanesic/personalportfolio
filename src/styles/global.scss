@@ -23,7 +23,8 @@ body {
 }
 
 .wrapper {
-  padding: 1rem 2rem;
+  // padding: 1rem 2rem;
+  padding: 1rem 1rem;
   width: 100%;
   margin: 0 auto;
 
@@ -93,6 +94,60 @@ body {
   }
 }
 
+.modelsWrapper {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+.overlaysRoot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modelOverlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  height: 100vh;
+  margin-top: -100vh;
+}
+
+.modelSection {
+  padding: 0rem 1rem;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.modelSection:nth-child(1) {
+  background-color: rgba(255, 242, 0, 0.05);
+}
+
+.modelSection:nth-child(2) {
+  background-color: rgba(214, 231, 246, 0.45);
+}
+
+.modelSection:nth-child(3) {
+  background-color: rrgba(253, 235, 218, 0.45);
+}
+
+.modelSection:nth-child(4) {
+  background-color: #000;
+}
+
+.modelSection:nth-child(5) {
+  background-color: rgba(87, 33, 33, 0.369);
+}
+
 @import './../components/Nav/nav';
 @import './../components/Footer/footer';
 
@@ -105,3 +160,7 @@ body {
 @import './../components/ProjectB/projectb';
 @import './../components/ProjectO/projecto';
 @import './../components/ProjectI/projecti';
+
+@import './../components/Models/models';
+@import './../components/Overlay/overlay';
+@import './../components/Menu/menu';

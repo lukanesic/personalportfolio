@@ -120,3 +120,120 @@
     justify-content: space-between;
   }
 }
+
+// NEW
+.project-review-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 5rem auto;
+
+  @include Laptops() {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0rem 9rem;
+  }
+
+  .project-review:nth-child(2) {
+    @include Laptops() {
+      margin-top: 25rem;
+    }
+  }
+
+  .project-review:nth-child(3) {
+    @include Laptops() {
+      margin-top: -10rem;
+    }
+  }
+
+  .project-review:nth-child(4) {
+    @include Laptops() {
+      margin-top: 10rem;
+    }
+  }
+
+  .project-review:nth-child(5) {
+    @include Laptops() {
+      margin-top: -5rem;
+    }
+  }
+
+  .project-review:nth-child(6) {
+    @include Laptops() {
+      margin-top: 15rem;
+    }
+  }
+
+  .project-review:nth-child(7) {
+    @include Laptops() {
+      margin-top: -5rem;
+    }
+  }
+}
+.project-review {
+  cursor: pointer;
+  transition: all 1s ease;
+
+  @include Laptops() {
+    width: 500px;
+  }
+
+  .pr-img {
+    height: 400px;
+    width: 100%;
+    // background-color: rgba(255, 242, 0, 0.05);
+    border-radius: 15px;
+    position: relative;
+
+    @include Pads() {
+      height: 600px;
+    }
+
+    @include Laptops() {
+      height: 500px;
+    }
+
+    img {
+      border-radius: 15px;
+    }
+  }
+
+  .pr-info {
+    margin-top: 2rem;
+    width: 100%;
+
+    h2 {
+      margin: 1rem 0;
+      font-weight: 400;
+      font-size: 22px;
+      color: #1c1d1f;
+
+      @include Pads() {
+        font-size: 32px;
+      }
+
+      @include Laptops() {
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      color: #1c1d1fb6;
+
+      @include Laptops() {
+        font-size: 18px;
+      }
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      margin: 1rem 0;
+      background-color: #1c1d1f;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+}

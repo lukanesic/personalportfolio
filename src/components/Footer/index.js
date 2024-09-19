@@ -8,18 +8,50 @@ const Footer = ({ footerTxtColor }) => {
       }}
     >
       <div className='wrapper'>
-        <h1>{`Contact`}</h1>
+        <h1>{`Let's work together`}</h1>
         <div className='hor-line'></div>
         <p>
           Feel free to reach out and connect with me for any inquiries or
           collaborations!{' '}
         </p>
+
+        <div className='services-container'>
+          <span className='services-subhead'>Services</span>
+          <div className='services-box'>
+            <span>Mobile App Development</span>
+            <span>iOS Development</span>
+          </div>
+          <div className='services-box'>
+            <span>UI Design</span>
+            <span>UX Design</span>
+          </div>
+          <div className='services-box'>
+            <span>Web Development</span>
+            <span>Web Applications</span>
+            <span>E-Commerce</span>
+          </div>
+
+          <div className='services-box'>
+            <span>React</span>
+            <span>React Native</span>
+            <span>Next.js</span>
+            <span>Node</span>
+            <span>Python</span>
+            <span>Django</span>
+          </div>
+          {/* <div className='services-box'>
+            <span>Python</span>
+            <span>Django</span>
+          </div> */}
+        </div>
       </div>
 
       <div className='socials wrapper'>
         <span className='mail link'>
           {' '}
-          <a href='mailto:lukannesic@gmail.com'>lukannesic@gmail.com</a>
+          <a href='mailto:lukannesic@gmail.com' className='main-btn'>
+            Get in touch
+          </a>
         </span>
         <span className='icon link'>
           <a
@@ -28,11 +60,12 @@ const Footer = ({ footerTxtColor }) => {
             rel='noopener noreferrer'
           >
             <img
-              src={
-                footerTxtColor && footerTxtColor === 'black'
-                  ? '/github-dark.png'
-                  : '/github.png'
-              }
+              // src={
+              //   footerTxtColor && footerTxtColor === 'black'
+              //     ? '/github-dark.png'
+              //     : '/github.png'
+              // }
+              src={'/github.png'}
               alt={'github'}
               width={'25'}
               height={'25'}
@@ -47,11 +80,12 @@ const Footer = ({ footerTxtColor }) => {
           >
             {' '}
             <img
-              src={
-                footerTxtColor && footerTxtColor === 'black'
-                  ? '/linkedin-dark.png'
-                  : '/linkedin.png'
-              }
+              // src={
+              //   footerTxtColor && footerTxtColor === 'black'
+              //     ? '/linkedin-dark.png'
+              //     : '/linkedin.png'
+              // }
+              src={'/linkedin.png'}
               alt={'linkedin'}
               width={'25'}
               height={'25'}

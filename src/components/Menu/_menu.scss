@@ -1,0 +1,46 @@
+.menu {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem 6rem;
+
+  right: 0;
+  background-color: #fff;
+  z-index: 111;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include Pads() {
+    width: 30vw;
+  }
+
+  @include Laptops() {
+    width: 700px;
+  }
+
+  .services-subhead {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 1.48;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+  }
+
+  .services-container {
+    .services-box {
+      display: flex;
+      margin: 1rem 0;
+      gap: 1rem;
+
+      span {
+        display: block;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 200;
+      }
+    }
+  }
+}

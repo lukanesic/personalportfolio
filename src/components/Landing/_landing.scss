@@ -1,14 +1,21 @@
 .landing {
-  height: 100vh;
-  display: grid;
-  place-content: center;
-  width: 100%;
+  // shakuro nema visinu, zauzima ono sto je kontent unutar njega
+  height: 700px;
+  // display: grid;
+  // place-content: center;
+  display: flex;
+  align-items: center;
 
   @include Pads() {
   }
 
+  @include Laptops() {
+    margin-top: 3rem;
+  }
+
   .main-head {
-    text-align: center;
+    // text-align: center;
+    text-align: left;
     font-size: 32px;
     font-weight: 500;
     letter-spacing: -2px;
@@ -19,15 +26,18 @@
     @include Pads() {
       font-size: 52px;
       line-height: 60px;
-      width: 700px;
+      width: 100%;
+      max-width: 1000px;
     }
 
     @include Laptops() {
-      font-size: 80px;
-      line-height: 60px;
-      width: 900px;
-      letter-spacing: -5px;
-      line-height: 90px;
+      // font-size: 70px;
+      // font-size:80px;
+      // line-height: 90px;
+      font-size: 60px;
+      line-height: 70px;
+
+      letter-spacing: -3px;
     }
   }
 
@@ -35,10 +45,13 @@
     width: 100%;
     color: #1c1d1f;
     display: inline-block;
-    text-align: center;
+    // text-align: center;
+    text-align: left;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: -0.5px;
+    margin-bottom: 3rem;
+    display: block;
 
     @include Pads() {
       font-size: 18px;
@@ -46,6 +59,17 @@
 
     @include Laptops() {
       font-size: 18px;
+      max-width: 700px;
     }
+  }
+
+  .main-btn {
+    border: none;
+    background-color: #1c1d1f;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
   }
 }

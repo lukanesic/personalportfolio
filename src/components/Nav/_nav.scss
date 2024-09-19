@@ -4,20 +4,29 @@ nav {
   left: 50%;
   transform: translate(-50%, 0);
   width: 100%;
-  backdrop-filter: blur(15px);
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 100;
+  // blur
+  // backdrop-filter: blur(15px);
+  // background-color: rgba(0, 0, 0, 0.3);
+  // background-color: rgba(255, 255, 255, 0.9);
+  z-index: 112;
 
   .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // sve sto sam uradio je dodao padding jer sam sklonio wrapper
+    padding: 2rem 1rem;
+
+    @include Laptops() {
+      padding: 2rem 4rem;
+    }
   }
 
   .nav-left {
     h1 {
       font-size: 20px;
-      color: #fff;
+      // color: #fff;
+      color: #282828;
 
       @include Pads() {
         font-size: 26px;
@@ -49,10 +58,16 @@ nav {
     align-items: center;
     justify-content: center;
 
+    .hamburger-react,
+    .hamburger-react * {
+      outline: none;
+      box-shadow: none;
+    }
+
     span {
       // margin-right: 0.5rem;
       font-size: 18px;
-
+      outline: none;
       display: none;
     }
   }
@@ -73,7 +88,8 @@ nav {
     }
 
     .content {
-      color: #fff;
+      // color: #fff;
+      color: #282828;
       display: flex;
       flex-direction: column;
       margin-bottom: 2rem;

@@ -1,19 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import Overlay from '../components/Overlay'
+import Menu from '../components/Menu'
 
 const Main = ({ children, footerTxtColor }) => {
+  const [isOpen, setOpen] = useState(false)
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <Nav />
+    <div>
+      <Nav isOpen={isOpen} setOpen={setOpen} />
+
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            <Overlay isOpen={isOpen} />
+            <Menu isOpen={isOpen} />
+          </>
+        )}
+      </AnimatePresence>
+
       {children}
       <Footer footerTxtColor={footerTxtColor} />
-    </motion.div>
+    </div>
   )
 }
 

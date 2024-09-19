@@ -6,6 +6,8 @@ import Jugometal from '../../pages/Jugometal'
 import Tehnoplast from '../../pages/Tehnoplast'
 import Ulnaris from '../../pages/Ulnaris'
 import Idcom from '../../pages/Idcom'
+import New from '../../pages/New'
+import About from '../../pages/about'
 
 const AnimatedRoutes = () => {
   return (
@@ -16,6 +18,8 @@ const AnimatedRoutes = () => {
       {/* <Route path='/jugometal' element={<Jugometal />} /> */}
       <Route path='/i&dcom' element={<Idcom />} />
       <Route path='/audi' element={<Audi />} />
+      <Route path='/new' element={<New />} />
+      {/* <Route path='/about' element={<About />} /> */}
     </Routes>
   )
 }

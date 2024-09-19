@@ -2,34 +2,20 @@ import React, { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Cross as Hamburger } from 'hamburger-react'
 import { useNavigate } from 'react-router-dom'
+import { useMyContext } from '../../store/ThemeContext'
 
-const Nav = () => {
-  const [isOpen, setOpen] = useState(false)
-
+const Nav = ({ isOpen, setOpen }) => {
   const navigate = useNavigate()
 
-  useEffect(() => {
-    if (isOpen) {
-      const width = document.body.clientWidth
-      document.body.style.overflowY = 'hidden'
-      document.body.style.width = `${width}px`
-    } else {
-      document.body.style.overflowY = 'visible'
-      document.body.style.width = `auto`
-    }
-
-    return () => {
-      document.body.style.overflowY = 'visible'
-      document.body.style.width = `auto`
-    }
-  }, [isOpen])
+  const { theme } = useMyContext()
 
   return (
     <motion.nav
       animate={{ height: isOpen ? '100vh' : '81px' }}
       transition={{ duration: 0.7 }}
     >
-      <div className='nav-container wrapper'>
+      {/* wrapper je bio ovde */}
+      <div className='nav-container'>
         <div className='nav-left'>
           <motion.div
             className='logo'
@@ -37,8 +23,14 @@ const Nav = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <h1 onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-              nl. <span>Web Developer</span>
+            <h1
+              onClick={() => navigate('/')}
+              style={{
+                cursor: 'pointer',
+                color: theme === 'dark' ? '#fff' : '#000',
+              }}
+            >
+              scope. <span>Web Duo</span>
             </h1>
           </motion.div>
         </div>
@@ -46,14 +38,15 @@ const Nav = () => {
         <div className='nav-right'>
           <span>menu</span>
           <Hamburger
+            className='hamburger-react'
             toggled={isOpen}
             toggle={setOpen}
             size={24}
-            color={'#fff'}
+            color={theme === 'dark' ? '#fff' : '#282828'}
           />
         </div>
       </div>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isOpen && (
           <motion.div
             className='nav-content wrapper'
@@ -128,7 +121,7 @@ const Nav = () => {
             </div>
           </motion.div>
         )}{' '}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </motion.nav>
   )
 }
