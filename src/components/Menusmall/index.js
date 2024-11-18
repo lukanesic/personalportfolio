@@ -2,21 +2,32 @@ import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const Menusmall = ({ isOpen }) => {
+  const handleTouchMove = (event) => {
+    if (isOpen) {
+      event.preventDefault()
+    }
+  }
+
   useEffect(() => {
     if (isOpen) {
       const width = document.body.clientWidth
       document.body.style.overflowY = 'hidden'
       document.body.style.width = `${width}px`
+      document.addEventListener('touchmove', handleTouchMove, {
+        passive: false,
+      })
     } else {
       document.body.style.overflowY = 'visible'
       document.body.style.width = `auto`
+      document.removeEventListener('touchmove', handleTouchMove)
     }
 
     return () => {
       document.body.style.overflowY = 'visible'
       document.body.style.width = `auto`
+      document.removeEventListener('touchmove', handleTouchMove)
     }
-  }, [isOpen])
+  }, [isOpen, handleTouchMove])
 
   return (
     <motion.div
