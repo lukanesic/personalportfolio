@@ -30,7 +30,7 @@ const Nav = ({ isOpen, setOpen }) => {
                 color: theme === 'dark' ? '#fff' : '#000',
               }}
             >
-              scope. <span>Web Duo</span>
+              scope.
             </h1>
           </motion.div>
         </div>

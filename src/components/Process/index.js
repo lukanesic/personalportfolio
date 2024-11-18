@@ -49,27 +49,33 @@ export default Process
 const steps = [
   {
     n: 'Step 1',
-    title: 'Project Setup',
+    title: 'Research and Planning',
     description:
-      'Ensure your team has all the essential information and resources to start the project smoothly, setting a solid foundation for success.',
+      ' Defining requirements, conducting market research, identifying target users, and creating a foundational strategy for the project.',
   },
   {
     n: 'Step 2',
-    title: 'Research and concept',
+    title: 'Design and Prototyping',
     description:
-      'Conduct thorough research to gather detailed insights on the target audience and market, shaping the features and overall concept to align perfectly with the demands.',
+      'Creating user interface (UI) and user experience (UX) designs through sketches, wireframes, and interactive prototypes to visualize the application.',
   },
   {
     n: 'Step 3',
-    title: 'Research and concept',
+    title: 'Development',
     description:
-      'Conduct thorough research to gather detailed insights on the target audience and market, shaping the features and overall concept to align perfectly with the demands.',
+      'Implementing features using appropriate technologies, frameworks, and databases, with careful coding and module testing.',
   },
   {
     n: 'Step 4',
-    title: 'Research and concept',
+    title: 'Testing and Quality Assurance',
     description:
-      'Conduct thorough research to gather detailed insights on the target audience and market, shaping the features and overall concept to align perfectly with the demands.',
+      'Checking for bugs, security, performance, and user experience to ensure the application functions correctly under various conditions.',
+  },
+  {
+    n: 'Step 5',
+    title: 'Deployment and Launch',
+    description:
+      'Publishing the application on targeted platforms (e.g., web, mobile devices) and making it available to users.',
   },
 ]
 
@@ -115,8 +121,9 @@ export const VerticalProcess = ({}) => {
       <div className='vertical-process-desc' ref={ref}>
         <h2>Development process.</h2>
         <p>
-          We rely on imagination and technical prowess to help brands transform,
-          shine, and reinvent themselves in the market and society.
+          Our approach combines creativity and technical expertise to help
+          clients evolve, stand out, and redefine themselves within the market
+          and society.
         </p>
         <div className='vertical-process-desc-bot'>
           <p>
@@ -147,11 +154,11 @@ export const VerticalProcess = ({}) => {
           <div className='vertical-step'>
             <div className='dot'></div>
           </div>
-          <div className='vertical-span'>{'Step 5'}</div>
-          <h4>{'Finishing'}</h4>
+          <div className='vertical-span'>{'Step 6'}</div>
+          <h4>{'Maintenance and Upgrades'}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
-            ullam.
+            Monitoring performance, resolving issues, regularly updating, and
+            adding new features based on user feedback.
           </p>
         </div>
       </div>

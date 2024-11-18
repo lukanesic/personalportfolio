@@ -11,81 +11,53 @@ import Process, { VerticalProcess } from '../components/Process'
 
 const data = [
   {
-    company: 'I&DCOM',
-    title: 'Hardware, print optimization, and office supplies',
+    company: 'Divine Hotel App',
+    title: 'Mobile app for managing hotel rooms.',
     tech: 'design, web application, development',
     // src: '/idcom.png',
-    src: '/test1.webp',
+    description:
+      'The objective was to create an intuitive tool for hotel staff to improve room service management. The result streamlined operations and boosted service quality across the property.',
+    src: '/divineapp2.png',
+    theme: 'rgba(255, 242, 0, 0.05)',
+    text: 'black',
+    url: 'divineapp',
+  },
+  {
+    company: 'I&D COM',
+    title: 'A web application designed for streamlined workflow.',
+    tech: 'design, web application, development',
+    // src: '/idcom.png',
+    src: '/idcom2.png',
+    description:
+      'The goal was to streamline internal workflows through a web app, enabling efficient data input and automated ticket generation, ultimately enhancing task management and collaboration.',
     theme: 'rgba(255, 242, 0, 0.05)',
     text: 'black',
     url: 'i&dcom',
-    reverse: true,
   },
   {
     company: 'Ulnaris Psyhiotherapy',
-    title: 'Application for managing patients and examinations',
+    title: 'Application for managing patients and examinations.',
     tech: 'web app, design, development',
     // src: '/ulnaris.png',
-    src: '/test2.webp',
+    src: '/ulnarisart.png',
+    description:
+      'Designed to help physiotherapists manage appointments, track patient history, and monitor progress, this web app improved workflow and enhanced patient care.',
     theme: 'rgba(214, 231, 246, 0.45)',
     text: 'black',
     url: 'ulnaris',
   },
   {
-    company: 'Tehnoplast',
-    title: 'Production & installation of ALU & PVC joinery',
+    company: 'Alex Jewelry',
+    title: 'Fine jewelry online shop',
     tech: 'redesign, web, development',
     // src: '/tehno-1-min.png',
-    src: '/test3.webp',
+    src: '/jew.jpg',
+    description:
+      'Created to showcase fine jewelry, this website offers a seamless browsing experience, highlighting exquisite designs and providing easy navigation for a premium shopping experience.',
     theme: 'rgba(253, 235, 218, 0.45)',
     text: 'black',
-    url: 'tehnoplast',
-    reverse: true,
+    url: 'alexzlatara',
   },
-  {
-    company: 'Ulnaris Psyhiotherapy',
-    title: 'Application for managing patients and examinations',
-    tech: 'web app, design, development',
-    // src: '/ulnaris.png',
-    src: '/test2.webp',
-    theme: 'rgba(214, 231, 246, 0.45)',
-    text: 'black',
-    url: 'ulnaris',
-  },
-  {
-    company: 'Tehnoplast',
-    title: 'Production & installation of ALU & PVC joinery',
-    tech: 'redesign, web, development',
-    // src: '/tehno-1-min.png',
-    src: '/test3.webp',
-    theme: 'rgba(253, 235, 218, 0.45)',
-    text: 'black',
-    url: 'tehnoplast',
-    reverse: true,
-  },
-
-  {
-    company: 'Jugometal',
-    title: 'Tractors & agricultural machinery',
-    tech: 'redesign, web, development',
-    src: '/jugo-project-1.png',
-    theme: 'rgba(242, 226, 225, 0.45)',
-    text: 'black',
-    url: 'jugometal',
-  },
-  // {
-  //   company: 'Audi & Tesla',
-  //   title: 'Tesla inspired website design with Audi models',
-  //   tech: 'personal project, web, development',
-  //   // src: '/audi.png',
-  //   src: '/test4.jpg',
-  //   theme: '#000',
-  //   text: 'white',
-  //   reverse: true,
-  //   txtClass: true,
-  //   url: 'audi',
-  //   ref: true,
-  // },
 ]
 
 const process = [
@@ -154,10 +126,15 @@ const Homepage = () => {
               key={index}
               src={project.src}
               url={project.url}
+              title={project.title}
+              tech={project.tech}
               r={project.ref}
               total={data.length}
+              company={project.company}
+              description={project.description}
             />
           ))}
+          {/* on stoji ovde zato sto on menja pozadinu */}
           <LastProjectReview />
         </div>
 

@@ -239,13 +239,23 @@ footer .link a {
   color: inherit;
 }
 footer .services-subhead {
-  font-size: 18px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.48;
   letter-spacing: 0.5px;
   font-weight: 300;
   margin: 3rem 0 2rem;
   display: block;
+}
+@media (min-width: 735px) and (max-width: 1279px) {
+  footer .services-subhead {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1280px) {
+  footer .services-subhead {
+    font-size: 18px;
+  }
 }
 footer .services-container {
   margin-bottom: 3rem;
@@ -254,11 +264,22 @@ footer .services-container .services-box {
   display: flex;
   margin: 0.5rem 0;
   gap: 0.8rem;
+  flex-wrap: wrap;
 }
 footer .services-container .services-box span {
   display: block;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 400;
+}
+@media (min-width: 735px) and (max-width: 1279px) {
+  footer .services-container .services-box span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) {
+  footer .services-container .services-box span {
+    font-size: 14px;
+  }
 }
 footer .main-btn {
   border: none;
@@ -337,6 +358,15 @@ footer .credits h4 {
   footer .credits h4 {
     font-size: 14px;
   }
+}
+
+.main-btn {
+  border: none;
+  background-color: #1c1d1f;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .landing {
@@ -1137,28 +1167,28 @@ footer .credits h4 {
 .menu {
   position: fixed;
   top: 1rem;
-  height: 70vh;
-  width: 80vw;
-  padding: 2rem 6rem;
+  padding: 2rem 2rem;
+  border-radius: 25px;
   right: 1rem;
   background-color: #fff;
   z-index: 111;
-  display: flex;
   flex-direction: column;
   justify-content: center;
+  display: none;
 }
 @media (min-width: 735px) and (max-width: 1279px) {
   .menu {
-    width: 30vw;
+    display: flex;
   }
 }
 @media (min-width: 1280px) {
   .menu {
-    width: 700px;
+    right: 3rem;
+    display: flex;
   }
 }
 .menu .services-subhead {
-  font-size: 20px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.9);
   line-height: 1.48;
   letter-spacing: 0.5px;
@@ -1166,12 +1196,92 @@ footer .credits h4 {
 }
 .menu .services-container .services-box {
   display: flex;
-  margin: 1rem 0;
-  gap: 1rem;
+  margin: 0.5rem 0;
+  gap: 0.5rem 1rem;
 }
 .menu .services-container .services-box span {
   display: block;
   border-radius: 15px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 200;
+}
+
+.services-subhead {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 1.48;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+@media (min-width: 1280px) {
+  .services-subhead {
+    font-size: 12px;
+  }
+}
+
+.services-container .services-box {
+  display: flex;
+  margin: 0.5rem 0;
+  gap: 0.5rem 1rem;
+}
+.services-container .services-box span {
+  display: block;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 200;
+}
+@media (min-width: 1280px) {
+  .services-container .services-box span {
+    font-size: 14px;
+  }
+}
+
+.menusmall {
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 111;
+  display: block;
+  padding: 0 1rem;
+  display: grid;
+  place-content: center;
+}
+@media (min-width: 735px) and (max-width: 1279px) {
+  .menusmall {
+    display: none !important;
+  }
+}
+@media (min-width: 1280px) {
+  .menusmall {
+    display: none !important;
+  }
+}
+.menusmall .menusmallContent {
+  padding: 6rem 1rem;
+}
+.menusmall .menusmallContent .content {
+  margin: 2rem 0;
+}
+.menusmall .menusmallContent h5 {
+  font-weight: 200;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.menusmall .menusmallContent .contentItem {
+  font-size: 1.2rem;
+  list-style-type: none;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.menusmall-headings h2 {
+  font-size: 2rem;
+}
+.menusmall-headings p {
+  font-size: 1rem;
 }/*# sourceMappingURL=global.css.map */

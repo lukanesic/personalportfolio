@@ -9,10 +9,10 @@ import ScrollToTop from '../hooks/scrollToTop'
 
 const landing = {
   client: 'Ulnaris Physiotherapy',
-  services: ['UX', 'Design', 'Development'],
-  tech: ['Figma', 'React', 'Redux Toolkit','SCSS','Firebase', 'Framer Motion'],
+  services: ['Design', 'UX', 'Web Development'],
+  tech: ['Figma', 'React', 'Redux Toolkit', 'Firebase'],
   title: 'Application for managing patients and examinations',
-  intro: `A newly opened physiotherapy studio has requested me to develop a web application to streamline their operations.`,
+  intro: `A physiotherapy studio has requested me to develop a web application to streamline their operations.`,
 }
 
 const Ulnaris = () => {
@@ -26,9 +26,8 @@ const Ulnaris = () => {
       <ProjectL data={landing} color={'#029FC7'} />
       <ProjectB src={'/ulnaris-main-logo.png'} name={'Ulnaris Physiotherapy'} />
       <ProjectO
-        overview={`This application was built using React, Framer Motion, and Redux Toolkit for development, state management and UX, with design done in Figma, and Firebase used for database storage.`}
+        overview={`This application was built using React and Redux Toolkit for development, state management and UX, with design done in Figma, and Firebase used for database storage.`}
         placeholder={'Visit Live App'}
-        link={'https://mdapp-tau.vercel.app/'}
       />
       <ProjectI
         src={'/Ulnarisgroup.png'}

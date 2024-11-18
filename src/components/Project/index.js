@@ -92,7 +92,16 @@ const Project = ({
 
 export default Project
 
-export const ProjectReview = ({ src, url, r, i }) => {
+export const ProjectReview = ({
+  src,
+  url,
+  r,
+  i,
+  title,
+  tech,
+  company,
+  description,
+}) => {
   const navigate = useNavigate()
 
   const handleUrl = () => {
@@ -116,12 +125,9 @@ export const ProjectReview = ({ src, url, r, i }) => {
 
       <div className='pr-info'>
         <h2>
-          <b>Printx</b> - Platform that integrates both robo-advisor
+          <b>{company}</b> - {title}
         </h2>
-        <p>
-          The goal was to design an experience for a notoriously demanding
-          audience. The end product turned out beyond expectation.
-        </p>
+        <p>{description}</p>
 
         {/* <button>Check it out</button> */}
       </div>
@@ -157,7 +163,7 @@ export const LastProjectReview = () => {
   const ctrls = useAnimation()
 
   const handleUrl = () => {
-    navigate(`/audi`)
+    navigate(`/jugometal`)
   }
 
   useEffect(() => {
@@ -176,8 +182,12 @@ export const LastProjectReview = () => {
     >
       <div className='pr-img'>
         <motion.img
-          src={'./test4.jpg'}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          src={'./tr2.jpg'}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
           alt={'title'}
           initial={{ scale: 1 }}
           whileHover={{ scale: 0.97 }}
@@ -189,11 +199,12 @@ export const LastProjectReview = () => {
 
       <div className='pr-info'>
         <h2>
-          <b>Printx</b> - Platform that integrates both robo-advisor
+          <b>Jugometal</b> - Agricultural machinery e-commerce solution
         </h2>
         <p>
-          The goal was to design an experience for a notoriously demanding
-          audience. The end product turned out beyond expectation.
+          This e-commerce website offers seamless browsing, highlights
+          top-quality equipment, and provides intuitive navigation for an
+          enhanced and efficient shopping experience.
         </p>
 
         {/* <button>Check it out</button> */}

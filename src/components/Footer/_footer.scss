@@ -21,13 +21,21 @@ footer {
   }
 
   .services-subhead {
-    font-size: 18px;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.48;
     letter-spacing: 0.5px;
     font-weight: 300;
     margin: 3rem 0 2rem;
     display: block;
+
+    @include Pads() {
+      font-size: 18px;
+    }
+
+    @include Laptops() {
+      font-size: 18px;
+    }
   }
 
   .services-container {
@@ -36,11 +44,20 @@ footer {
       display: flex;
       margin: 0.5rem 0;
       gap: 0.8rem;
+      flex-wrap: wrap;
 
       span {
         display: block;
-        font-size: 14px;
+        font-size: 11px;
         font-weight: 400;
+
+        @include Pads() {
+          font-size: 14px;
+        }
+
+        @include Laptops() {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -149,4 +166,14 @@ footer {
       }
     }
   }
+}
+
+.main-btn {
+  border: none;
+  background-color: #1c1d1f;
+
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 import Overlay from '../components/Overlay'
 import Menu from '../components/Menu'
+import Menusmall from '../components/Menusmall'
 
 const Main = ({ children, footerTxtColor }) => {
   const [isOpen, setOpen] = useState(false)
@@ -17,6 +18,7 @@ const Main = ({ children, footerTxtColor }) => {
           <>
             <Overlay isOpen={isOpen} />
             <Menu isOpen={isOpen} />
+            <Menusmall isOpen={isOpen} />
           </>
         )}
       </AnimatePresence>

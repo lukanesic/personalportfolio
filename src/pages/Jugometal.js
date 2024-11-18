@@ -8,10 +8,11 @@ import ProjectI from '../components/ProjectI'
 
 const landing = {
   client: 'Jugometal',
-  services: ['UX', 'Re-Design', 'Development'],
-  tech: ['Next.js', 'Redux Toolkit', 'MongoDB', 'Mongoose','SCSS', 'Framer Motion'],
+  services: ['Re-Design', 'UX', 'Development'],
+  tech: ['Next.js', 'Redux Toolkit', 'MongoDB', 'Mongoose', 'Framer Motion'],
   title: 'Tractors & agricultural machinery',
   intro: `I was tasked with converting a WordPress website into a Next.js website, ensuring that all of the original functionalities, including admin and e-commerce capabilities were retained.`,
+  website: 'https://jugometal.co.rs',
 }
 
 const Jugometal = () => {
@@ -26,15 +27,15 @@ const Jugometal = () => {
       <ProjectO
         overview={`For the development of the website, I utilized Next.js for its server-side rendering capabilities and SEO benefits, MongoDB as the database and Redux Toolkit for state managment.`}
         placeholder={'Visit Live Website'}
-        link={'https://jugometal-2sdt.vercel.app/'}
+        link={'https://jugometal.co.rs'}
       />
-      <ProjectI
+      {/* <ProjectI
         src={'/jugo-new.png'}
         name={'Jugometal'}
         bg={'rgba(242, 226, 225, 0.8)'}
         width={'60%'}
         height={'60%'}
-      />
+      /> */}
     </Main>
   )
 }

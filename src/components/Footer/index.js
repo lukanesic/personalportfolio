@@ -36,19 +36,25 @@ const Footer = ({ footerTxtColor }) => {
             <span>UX Design</span>
           </div>
           <div className='services-box'>
+            <span>Android Apps</span>
+          </div>
+          <div className='services-box'>
             <span>Web Development</span>
             <span>Web Applications</span>
-            <span>E-Commerce</span>
           </div>
 
           <div className='services-box'>
+            <span>E-Commerce</span>
+          </div>
+
+          {/* <div className='services-box'>
             <span>React</span>
             <span>React Native</span>
             <span>Next.js</span>
             <span>Node</span>
             <span>Python</span>
             <span>Django</span>
-          </div>
+          </div> */}
           {/* <div className='services-box'>
             <span>Python</span>
             <span>Django</span>

@@ -19,7 +19,16 @@ const ProjectL = ({ data, color }) => {
         >
           <span className='s-title'>client</span>
           <span className='li' style={{ color: color }}>
-            {data.client}
+            <a
+              href={data.website}
+              target='_blank'
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+            >
+              {data.client}
+            </a>
           </span>
         </motion.div>
         <motion.div

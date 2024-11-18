@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectB = ({ src, name, bg }) => {
   return (
-    <div className='projectb' style={{ backgroundColor: bg && '#000' }}>
+    <div className='projectb' style={{ backgroundColor: bg && bg }}>
       <img
         src={src}
         alt={name}

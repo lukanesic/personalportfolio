@@ -1,0 +1,54 @@
+.menusmall {
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 111;
+  display: block;
+  padding: 0 1rem;
+  display: grid;
+  place-content: center;
+
+  @include Pads() {
+    display: none !important;
+  }
+
+  @include Laptops() {
+    display: none !important;
+  }
+
+  .menusmallContent {
+    padding: 6rem 1rem;
+
+    .content {
+      margin: 2rem 0;
+    }
+
+    h5 {
+      font-weight: 200;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .contentItem {
+      font-size: 1.2rem;
+      list-style-type: none;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.menusmall-headings {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

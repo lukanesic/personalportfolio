@@ -7,12 +7,13 @@ import ProjectI from '../components/ProjectI'
 import ProjectO from '../components/ProjectO'
 
 const landing = {
-  client: 'I&DCOM',
-  services: ['UX', 'Design', 'Development'],
-  tech: ['React', 'Node', 'Redux Toolkit', 'MongoDB', 'Mongoose', 'SCSS'],
+  client: 'I&D COM',
+  services: ['Design', 'UX', 'Development'],
+  tech: ['React', 'Node', 'Redux Toolkit', 'MongoDB', 'Mongoose'],
   title:
     'Importer & supplier for printers, hardware, print optimization, and office supplies.',
   intro: `The employer sought an application for tracking job statistics, analytics, and generating and printing work orders to streamline workflow and enhance productivity.`,
+  website: 'https://idcom.rs/',
 }
 
 const Idcom = () => {
